@@ -1,0 +1,99 @@
+body {
+  background-image: url('./assets/style-Images/noise-dark.png');
+  background-color: #181818;
+  color: #fff;
+  font-family:monospace;
+  display: flex;
+  margin: 0px;
+  padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  position: relative; 
+  max-width: 500px; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 0 2px #ffffff59, 5px 15px 15px rgba(0, 0, 0, 0.349); 
+  background-image: url('./assets/style-Images/noise-light.png');
+  text-align: center; 
+  margin-bottom: 20px;
+  transition: background-color 0.5s, border-color 0.3s, transform 0.3s, box-shadow 0.3s, color 0.5s, background-image 0.5s;
+}
+
+.book-container:hover{
+  background-color: #454753;
+  background-image: url('./assets/style-Images/noise-dark.png');
+  transform: translateX(5px); 
+}
+
+.book-inside-container {
+  box-shadow: 0 0 0 2px #ffffff59, 5px 15px 15px rgba(0, 0, 0, 0.349); 
+  background-image: url('./assets/style-Images/noise-light.png'), linear-gradient(to top, #1f1e1d, #292725);
+  border-radius: 10px;
+}
+
+.book-image {
+  width: 200px;
+  height: 300px; 
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.349); 
+  margin-top: 15px;
+}
+
+.book-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.774); 
+}
+
+.book-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.774); 
+}
+
+.book-characters {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.774); 
+}
+
+.book-button {
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family:'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.589);
+  text-decoration: none;
+  color: #fff;
+  background-image: url('./assets/style-Images/noise-dark.png'), linear-gradient(to top, #2a2e61, #3b3e66);
+  border: 2px solid;
+  border-color: #4f5381;
+  border-radius: 5px; 
+  margin-bottom: 10px;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s, color 0.3s, background-image 0.3s;
+}
+
+.book-button:hover {
+  border-color: #6f66a5; 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.658);
+  background-image: url('./assets/style-Images/noise-dark.png'), linear-gradient(to bottom, #4d5080, #52557a);
+}
+
+.book-button:active {
+  background-image: url('./assets/style-Images/noise-light.png'), linear-gradient(to bottom, #2c2d80, #333481);
+  transform: translateY(2px); 
+  color: #ffffffa6;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
